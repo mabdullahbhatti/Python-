@@ -1,0 +1,70 @@
+#Creates a function for the area and Circumference of Circle
+
+def area_Circum_circle(r):
+    area= 2*3.1416*r
+    circum= 3.1416 * r * r
+    return area, circum
+
+#This functions accepts the Radius of Circle entered by user
+
+r=float(input("Enter Radius:" ))
+
+#This block calls the function area and Circumference area_peri
+
+area,circum=area_Circum_circle(r)
+
+#This gives output area and Circumference  
+#using method to round to 2 digits after point"round(number[, ndigits]) -"
+
+print ("Area of circle:", round(area,2))
+print ("Circumference of circle:", round(circum,2))
+=========================================================================================
+#Creates a function the area and perimeter of rectangle
+
+def area_peri(length,width):
+    area= length*width
+    peri= 2*(length + width)
+    return area, peri
+
+#This functions accepts length and width of rectangle  
+
+length=float(input("Enter the length of rectangle :" ))
+width=float(input("Enter the width of rectangle :" ))
+
+#This block calls the function area and perimeter area_peri
+
+area,peri=area_peri(length,width)
+
+#This gives output area and perimeter of rectangle
+
+print ("Area of rectangle:", area)
+print ("Perimeter of rectangle:", peri)
+=======================================================================================
+# This function take age as an interger value and returns the eligible 
+
+age = int(input("Enter age:"))
+
+#Check condition if greater than 18  eligible or ineligible
+
+def vote_eligibility(age) :
+    if age >= 18 :
+        return "eligible"
+    else :
+        return "not eligible"
+
+print(vote_eligibility(age))
+========================================================================================
+#This function take the base and exponent numbers and gives solution
+
+def number_exponent(base, exponent):
+ answer = base ** exponent
+ return answer
+
+base= float(input("Enter the base number: "))
+exponent= float(input("Enter the exponent: "))
+
+#calling function
+answer =number_exponent(base, exponent)
+
+print(number_exponent(base, exponent))
+
