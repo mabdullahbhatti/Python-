@@ -18,6 +18,7 @@ file.close()
 file = open("pyfile1.txt", "a") 
 file.write ("We are praying to get over with this terrible era \n")
 file.close() 
+
 #Write a program to fetch the file located at the desktop.
 # we will be using os methods to find the location directory
 
