@@ -1,0 +1,57 @@
+class Circle():
+#This class has two methods for area and perimeter 
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return self.radius**2*3.14
+    
+    def Circumference(self):
+        return 2*self.radius*3.14
+
+Circles = Circle(13)
+print(Circles.area())
+print(Circles.Circumference())
+========================================================================================================================
+
+class Temperature():
+    def __init__(self, intemp):
+        self.intemp = intemp
+
+    def convertFahrenheit(self):
+        Fahr = float((9 * self.intemp) / 5 + 32)
+        return Fahr
+    
+    def convertCelsius(self):
+        Celc = float((self.intemp - 32) * 5 / 9)
+        return Celc
+    
+input_intemp = float(input("Input temperature in Celsius: "))
+temp1 = Temperature(input_intemp)
+print(temp1.convertFahrenheit())
+
+input_intemp = float(input("Input temperature in Fahrenheit: "))
+temp1 = Temperature(input_intemp)
+print(temp1.convertCelsius())
+
+=====================================================================================================================
+
+class Student():
+    def __init__(self, name, roll_number):
+        self.name = name
+        self.roll_number = roll_number
+        
+        
+def setAge(self,age):
+       self.Age = 25
+       return self.Age
+        
+def setMarks(self,Marks):
+     self.Marks = 495  
+     return self.Marks
+s1=Student('joseph',111)
+
+
+def display(self):
+        print("Name:%s, roll_number:%d, age:%d, Marks:%d"  % (self.name, self.roll_number, self.Age,self.Marks))        
+        
