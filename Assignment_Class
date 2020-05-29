@@ -37,10 +37,11 @@ print(temp1.convertCelsius())
 =====================================================================================================================
 
 class Student():
-    def __init__(self, name, roll_number):
+    def __init__(self, name, roll_number,age, Marks):
         self.name = name
         self.roll_number = roll_number
-        
+        self.Age=age
+        self.Marks=Marks
         
 def setAge(self,age):
        self.Age = 25
@@ -49,9 +50,11 @@ def setAge(self,age):
 def setMarks(self,Marks):
      self.Marks = 495  
      return self.Marks
-s1=Student('joseph',111)
+
 
 
 def display(self):
         print("Name:%s, roll_number:%d, age:%d, Marks:%d"  % (self.name, self.roll_number, self.Age,self.Marks))        
+        
+s1=Student('joseph',2323,25,111) 
         
